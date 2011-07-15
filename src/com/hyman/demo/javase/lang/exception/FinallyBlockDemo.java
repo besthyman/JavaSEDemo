@@ -52,12 +52,9 @@ public class FinallyBlockDemo {
 //m1 executing
 //finally executing
 //finally
-/*
- * my conclusion: all the logic try block is executed before finally.
- */
-/*
- * if has return clause in try block, after the try block finish, the return
- * result is got, and the method is ready to return. But before method exit, the
- * finally block is executed, if the finally block modify the return value, the
- * previous value is override.
- */
+
+// my conclusion:
+//try block is always executed before finally block. 
+//We can see return clause in try as set the return value for the method and the method is ready to exit. 
+//If the finally block has return clause, it will also set the return value for the method. 
+//Since finally is executed after try, its return value override the try's one.
